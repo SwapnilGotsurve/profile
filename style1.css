@@ -1,0 +1,284 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    background-color: rgb(17, 17, 17);
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    
+}
+header{
+    margin-top: 1%;
+    height: 50px;
+    /* background-color: gray; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 3%;
+}
+header h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    color: white;
+    margin-left: 5%;
+}
+.night-mode{
+    font-size: 2.3rem;
+    margin-right: 5%;
+    color: white;
+}
+.left-part{
+    text-align:center;
+    /* border: 2px solid red; */
+    height: 70vh;
+    width: 53%;
+    margin-left: 3%;
+    margin-right: 4%;
+}
+.left-part h1{
+    font-size: 4rem;
+   margin-top: 3%;
+   margin-bottom: 3%;
+   font-weight: 800;
+   font-family: arial;
+   cursor: pointer;
+   text-shadow: rgba(243, 255, 255, 0.712) 0px 0px 10px;
+   font-size: 68.0px;
+    background: -webkit-linear-gradient(white, rgb(255, 255, 255));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  
+}
+.left-part p{
+    line-height: 30px;
+    font-style: oblique;
+    font-size: 1.4rem;
+    margin-bottom: 3%;
+    color: rgb(241, 241, 241);
+    font-weight: 500;
+}
+.profile-img{
+    background: url("profile-img.png");
+    background-repeat: no-repeat;
+    border-radius: 58% 42% 31% 69% / 58% 60% 40% 42%  ;
+    height: 440px;
+    width: 440px;
+    background-size: 31rem;
+    z-index: 2;
+    filter: saturate(120%);
+    /* filter: sepia(10%); */
+    filter: brightness(105%);
+    
+}
+.contact-us button{
+    height:40px;
+    width: 120px;
+    border-radius: 10px;
+    font-size: 1rem;
+    background-color: rgba(255, 255, 255, 0.219);
+    color: rgb(246, 255, 255);
+    font-weight: 600;
+    cursor: pointer;
+    
+    border: 2px groove aqua;
+}
+.contact-us button:hover{
+    background-color:rgba(0, 255, 255, 0.733);
+    color: rgb(255, 255, 255);
+    
+    -webkit-box-shadow:0px 0px 59px 5px aqua;
+-moz-box-shadow: 0px 0px 59px 5px aqua;
+box-shadow: 0px 0px 59px 5px aqua;
+}
+.profile-back{
+    /* background: url("profile.png"); */
+  border-radius: 58% 42% 31% 69% / 58% 60% 40% 42%  ;
+    background-repeat: no-repeat;
+    background-color: rebeccapurple;
+    background-size: 28rem;
+    margin-right: 3%;
+    z-index: 0;
+    height: 440px;
+    width: 440px;
+    border: 1px solid white;
+    /* filter: drop-shadow(10px 10px 10px rgb(247, 247, 247)); */
+
+background: linear-gradient(90deg, rgba(23, 240, 255, 0.747) 0%, rgb(8, 23, 163) 81%);
+}
+.contact-logo{
+    margin-top: 5%;
+    width:100%;
+    display: flex;
+    align-items: center;
+
+    font-size: 2.0rem;
+
+    margin-left: 30%;
+    margin-right: 30%;
+}
+.right-part{
+       margin-right: 3%;
+       cursor: pointer;
+}
+#instagram, #facebook, #github, #linkdone, #youtube{
+    margin: 15px;
+    color:aqua;
+}
+#instagram:hover, #facebook:hover, #github:hover, #linkdone:hover, #youtube:hover{
+    color:rgb(255, 255, 255);
+}
+
+/* -------------responsive for mobile devices-------------- */
+
+@media only screen and (max-width: 700px) {
+    *{
+        margin: 0%;
+        padding: 0%;
+    }
+    
+    body{
+        background-color: rgb(0, 2, 24);
+
+    }
+    .container{
+
+        display:block;
+  
+        
+    }
+    header{
+        margin-top: 1%;
+        height: 50px;
+        /* background-color: gray; */
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 3%;
+    }
+    header h1{
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 700;
+        font-size: 1.5rem;
+        color: rgb(255, 255, 255);
+        margin-left: 5%;
+  
+    }
+    .night-mode{
+        font-size: 1.6rem;
+       
+    }
+    .left-part{
+        text-align:center;
+        /* border: 2px solid red; */
+       height: 100%;
+         /* width: 100%; */
+        margin-top: 60%;
+      
+    }
+    .left-part h1{
+        font-size: 1.6rem;
+        width: 170%;
+       margin-bottom: 3%;
+       font-weight: 600;
+       font-family: arial;
+       cursor: pointer;
+ 
+       margin-bottom: 10%;
+
+      
+    }
+    .left-part p{
+        font-style: oblique;
+        font-size: 1.0rem;
+        margin-bottom: 3%;
+        color: #ffffff;
+        font-weight: 500;
+        width: 170%;
+    }
+    .profile-img{
+        background: url("profile-img.png");
+        background-repeat: no-repeat;
+        border-radius: 58% 42% 31% 69% / 58% 60% 40% 42%  ;
+        height: 180px;
+        width: 180px;
+        background-size: 12.5rem;
+        z-index: 2;
+/* 
+        transform: translateY(-7 30px); */
+        
+        filter: saturate(120%);
+        /* filter: sepia(10%); */
+        filter: brightness(105%);
+        
+    }   
+     .profile-back{
+       
+      border-radius: 58% 42% 31% 69% / 58% 60% 40% 42%  ;
+        background-repeat: no-repeat;
+        background-color: rebeccapurple;
+        background-size: 10rem;
+        z-index: 0;
+      margin-left: 26%;
+    
+      margin-right: 17%;
+      transform: translateY(-650px);
+      
+        height: 180px;
+        width: 180px;
+     
+        
+background: linear-gradient(90deg, rgba(23, 240, 255, 0.747) 0%, rgb(8, 23, 163) 81%);
+    }
+    .contact-us button{
+        height:20px;
+        width: 90px;
+        border-radius: 10px;
+        font-size: 0.7rem;
+        background-color: transparent;
+      color:rgb(220, 255, 255);
+        font-weight: 600;
+        cursor: pointer;
+        margin-top: 10%;
+        margin-left: 65%;
+        border: 1px groove aqua;
+    }
+    .contact-us button:hover{
+        background-color: #08c3fc;
+        color: white;
+        
+        -webkit-box-shadow:0px 0px 59px 5px rgba(255,18,200,1);
+    -moz-box-shadow: 0px 0px 59px 5px rgba(255,18,200,1);
+    box-shadow: 0px 0px 59px 5px rgba(255,18,200,1);
+    }
+
+    .contact-logo{
+        margin-top: 6%;
+      
+        width:100%;
+        display: flex;
+        align-items: center;
+    
+        font-size: 1.2rem;
+    
+        margin-left: 25%;
+        margin-right: 0%;
+    }
+    .right-part{
+           margin-right: 3%;
+           cursor: pointer;
+           height: 0px;
+           
+    }
+    #instagram, #facebook, #github, #linkdone, #youtube{
+        margin: 14px;
+        color:aqua;
+    }
+    #instagram:hover, #facebook:hover, #github:hover, #linkdone:hover, #youtube:hover{
+        color:rgb(255, 255, 255);
+    }
+}
